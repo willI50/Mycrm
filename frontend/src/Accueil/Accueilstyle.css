@@ -1,0 +1,41 @@
+.div1{
+
+border: 2px solid;
+background-color: black;
+height: 100vh;
+background-image: url(https://static.vecteezy.com/ti/vecteur-libre/p1/600537-abstrait-fond-noir-degrade-qui-a-l-39-air-moderne-vectoriel.jpg);
+
+}
+.title1{
+
+    font-family:'Times New Roman', Times, serif;
+    font-size:1000%;
+    color: white;
+    position:relative;
+    }
+
+.bT1{
+
+    width: 50%;
+    height: 60px;
+    display: block;
+    position:absolute;
+/* color:rgb(216, 139, 39); */
+
+}
+
+.R1{
+margin-top: 110px;
+margin-left: 160px;
+
+}
+.div2{
+display: none;
+
+
+}
+.bG{
+
+    height:100vh;
+    width: 100%;
+}

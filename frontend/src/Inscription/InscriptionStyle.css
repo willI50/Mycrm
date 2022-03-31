@@ -1,0 +1,58 @@
+.headerIn{
+    color:blue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 500px;
+    margin-top: 20px;
+    font-size: 60px;
+    margin-bottom: 30px;
+    
+    
+    }
+    .link1{
+    margin-left: 110px;
+    
+    }
+    
+    .a{
+    
+       background-color: black;
+       height: 1000vh;
+    }
+     
+        .mybtnIn{
+            margin-top:5ex;
+            background-color:blue;
+            color: white;
+    
+            display: block;
+        width: 700px;
+        margin-left: 90px;
+        } 
+    
+        .Myform{
+    
+           margin-left: 200px;
+           margin-right: 200px;;
+           /* display:inline-flexbox; */
+           border: 2px white;
+           border-style:double;
+           border-radius: 30px;
+           height: 70vh;
+           padding-left: 30px;
+        
+        }
+        .i1{
+    
+    
+          margin-top: -40px;
+    margin-bottom: -35px;
+    margin-left: 360px;
+    height: 27px;
+        }
+        .i2{
+          /* margin-top: -30px; */
+          margin-bottom: -38px;
+          margin-left: 360px;
+          height: 28px;
+    
+        }
