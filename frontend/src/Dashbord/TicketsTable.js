@@ -1,78 +1,106 @@
-import React from 'react'
-import {Table} from 'react-bootstrap'
+import React from "react";
+import { Table } from "react-bootstrap";
+import "./TicketsTable.css";
+import axios from "axios";
 
-class TicketsTable extends React.Component{
+class TicketsTable extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      myticket: [],
+    };
+  }
 
-    constructor(props){
-super(props);
-this.state={}
+  componentDidMount() {
+    axios.get("http://localhost:4002/api/NewTicke").then((res) => {
+      const inf = res.data;
 
+      this.setState({
+        myticket: inf,
+      });
 
-    }
-render(){
+      // console.log(this.state.myticket);
+    });
+  }
 
-    return(
-    
-        <Table  hover  style={{"color":"white"}}>
+  handletick(){
+
+   
+  }
+
+  render() {
+    return (
+      <div>
+        <Table  style={{ color: "blue" }}>
           <thead>
-          <tr>
-          <th>#</th>
-          <th>Subjects</th>
-          <th>Status</th>
-          <th>Opened Date</th>
-
-          </tr>
-
+            <tr>
+              <th>#</th>
+              <th>Subjects</th>
+              <th>Status</th>
+              <th>Opened Date</th>
+              <th>Update</th>
+            </tr>
           </thead>
+
           <tbody>
-          <tr>
-          <td>1</td>
-          <td>ssl issue</td>
-          <td>Client Response Pending</td>
-          <td>2022-2-14</td>
 
-          </tr>
-
-          <tr>
-          <td>1</td>
-          <td>ssl issue</td>
-          <td>Client Response Pending</td>
-          <td>2022-2-14</td>
-
-          </tr>
-
-          <tr>
-          <td>1</td>
-          <td>ssl issue</td>
-          <td>Client Response Pending</td>
-          <td>2022-2-14</td>
-
-          </tr>
-
-
-          <tr>
-          <td>1</td>
-          <td>ssl issue</td>
-          <td>Client Response Pending</td>
-          <td>2022-2-14</td>
-
-          </tr>
-
+              { this.state.myticket.map((ticket,i) => 
+                
+                <tr key={i} className="tb">
+                  <td>{i+1} </td>
+                  <td>{ ticket.subject}</td>
+                  <td>appending status</td>
+                  <td>{ticket.date}</td>
+                 </tr>
+              ) }
+            
+        
           </tbody>
-
-
-
         </Table>
 
+        {/* <Table style={{ color: "blue" }}>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Subjects</th>
+              <th>Status</th>
+              <th>Opened Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="tb">
+              <td>1</td>
+              <td>ssl issue</td>
+              <td>Client Response Pending</td>
+              <td>2022-2-14</td>
+            </tr>
 
+            <tr className="tb">
+              <td>1</td>
+              <td>ssl issue</td>
+              <td>Client Response Pending</td>
+              <td>2022-2-14</td>
+            </tr>
 
+            <tr className="tb">
+              <td>1</td>
+              <td>ssl issue</td>
+              <td>Client Response Pending</td>
+              <td>2022-2-14</td>
+            </tr>
 
-
-    )
+            <tr className="tb">
+              <td>1</td>
+              <td>ssl issue</td>
+              <td>Client Response Pending</td>
+              <td>2022-2-14</td>
+            </tr>
+          </tbody>
+        </Table> */}
+        {/* {this.state.myticket} */}
+      </div>
+    );
+  }
 }
 
-
-
-}
-
-export default TicketsTable ;
+export default TicketsTable;

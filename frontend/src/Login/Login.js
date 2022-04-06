@@ -14,6 +14,9 @@ const [password , SetPassword]=useState("");
 const [info , setInfo]=useState({})
 const navigate=useNavigate()
 
+
+
+
 const handlechange=(e)=>{
    const {name , value}  = e.target  ;
 
@@ -50,19 +53,21 @@ const handlechange=(e)=>{
     
    //envoyer les element a la base de données
    
-    axios.post('http://localhost:4002/api/Login', info).then( (res)=>  {  
+    axios.post('http://localhost:4002/api/Login', info).then( res =>  {  
         const infos=res.data
         console.log(infos);
 //stocker les elements dans le localStorage
-        localStorage.setItem("token",JSON.stringify(infos))
-if(!info){   
+       
+if(info==undefined){   
 
     console.log("rien")
 }
 else{ 
-
+    localStorage.setItem("token",JSON.stringify(infos));
+    
 //POUR LES REDIRECTIONS
         navigate("/Dashbord")
+       
 
          }
 } )
@@ -73,16 +78,16 @@ else{
 
 return(
 
-<div className='a'>
+<div className=''>
     
 
 
-<div className='row '>
-<div className='col ' >
+<div className='row '> 
+<div className='col-4 orm' >
 <div className='form-group'>
 <h1 className='headerlog' > Login Client   </h1>
 
-<form className='orm' onSubmit={handleSubmit} >
+<form className='' onSubmit={handleSubmit} >
 <hr/>
 <div className='form-group'>
 
@@ -116,6 +121,9 @@ return(
     
 <br/>
 </div>
+</div>
+<div className='col b  ' >
+    
 </div>
 </div>
 

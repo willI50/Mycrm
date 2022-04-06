@@ -21,7 +21,7 @@ render(){
 
 return(
 
-<div  className="bg-dark">
+<div  className="">
 <Header/>
 <br/><br/><br/><br/>
 <div className="row">
@@ -34,10 +34,10 @@ return(
 
 <div className="row" >
 <div className=" col text-center  mb-3 mt-5"  >
-<div className="mb-3" style={{"color":"white"}}>
+<div className="mb-3" style={{"color":"blue"}}>
 <strong>Total Commands : 500 </strong>
 </div>
-<div style={{"color":"white"}}> 
+<div style={{"color":"blue"}}> 
 <strong>Pending Commands : 50</strong>
 </div>
 </div>

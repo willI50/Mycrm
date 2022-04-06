@@ -5,13 +5,14 @@ import {Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import Header from '../Layout/Header';
+import axios    from 'axios'
 
 class NewTicket extends React.Component{
 
 constructor(props){
 super(props);
 this.state=({
-    info:[],
+    info:{},
    subject:"",
    date:[],
    text:""
@@ -50,6 +51,13 @@ this.setState({
     
         })
 
+        axios.post('http://localhost:4002/api/NewTicket', this.state.info).then( (res)=>  {  
+            const infos=res.data
+            console.log(infos)
+           
+    
+        })
+        
 
 }
 

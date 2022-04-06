@@ -13,9 +13,9 @@ render(){
 
     return(
     
-        <Table  hover  style={{"color":"white"}}>
+        <Table   style={{"color":"blue"}}>
           <thead>
-          <tr>
+          <tr >
           <th>#</th>
           <th>Subjects</th>
           <th>Status</th>
@@ -27,7 +27,7 @@ render(){
 
           </thead>
           <tbody>
-          <tr>
+          <tr  className='tb'>
           <td>1</td>
           <td>ssl issue</td>
           <td>Client Response Pending</td>
@@ -36,7 +36,7 @@ render(){
 
           </tr>
 
-          <tr>
+          <tr  className='tb'>
           <td>1</td>
           <td>ssl issue</td>
           <td>Client Response Pending</td>
@@ -45,7 +45,7 @@ render(){
 
           </tr>
 
-          <tr>
+          <tr  className='tb'>
           <td>1</td>
           <td>ssl issue</td>
           <td>Client Response Pending</td>
@@ -55,7 +55,7 @@ render(){
           </tr>
 
 
-          <tr>
+          <tr  className='tb'>
           <td>1</td>
           <td>ssl issue</td>
           <td>Client Response Pending</td>

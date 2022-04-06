@@ -56,8 +56,11 @@ e.preventDefault();
         axios.post('http://localhost:4002/api/inscription', this.state.info).then( (res)=>  {  
             const infos=res.data
             console.log(infos)
-            // .catch(()=> console.log("pas reussie"))
-            // navigate("/NewTicket")
+
+           
+            
+        
+        //    navigate("/Dashbord" )
     
         })
         
@@ -77,30 +80,39 @@ e.preventDefault();
 render(){
 return(
 
-<div className='a'>
-    
-    
-    <div className='row '>
-    <div className='col ' >
+<div className=''>
+<div className='row '>
+<div className='col-6'>
+   
     <h1 className='headerIn' > Register Client  </h1>
-    <div className='form-group'>
-    
-    <form className='Myform' onSubmit={this.handlesubmit} >
+    </div>
+    <div className='col-2 d'>
+    </div>
+    </div>
     <hr/>
-    <div className='row'>
-    <div className='col'>
+    <div className=' ' >
+    <div className='form-group'>
+    <br/>
+    <form className='' onSubmit={this.handlesubmit} >
+    <div className='row a '>
+    <div className='col '>
+    <br/> <br/> <br/>
+    <div className='row '>
+    <br/>
+    <div className='col-2 '>
+
     <div className='form-group'>
     
     <FontAwesomeIcon icon={ faUser} className="i1" ></FontAwesomeIcon>
     <input type="text" name='Nom' onChange={this.handleChange}  placeholder='Nom Complet' className='form-control'  required />
-    
+    <br/>
     </div>
 
-    <div className='form-group'>
+    <div className='form-group '>
     
     <FontAwesomeIcon icon={ faEnvelope} className="i1" ></FontAwesomeIcon>
     <input type="email" name='email' onChange={this.handleChange}  placeholder='Email' className='form-control'  required />
-    
+    <br/>
     </div>
 
     <div className='form-group'>
@@ -109,8 +121,9 @@ return(
     <input type="text" name='Ville' onChange={this.handleChange}  placeholder='Ville' className='form-control'  required />
     
     </div>
+    
     </div>
-    <div className='col'>
+    <div className='col-2 b2 '>
     
 
     <div className='form-group'>
@@ -139,16 +152,23 @@ return(
     </div>
     
     <br/>
+    
+    
     </div>
-    <hr/>
+    <br/> <br/>
+    <hr className='hr' />
     <button className='mybtnIn btn' type='submit'> Register </button>
+    </div>
+    
+    
+    
+    <div className='col k'>
+    </div>
+    </div>
     </form>
     
-       
+    </div>
         
-    <br/>
-    </div>
-    </div>
     </div>
     
     {/* </div> */}

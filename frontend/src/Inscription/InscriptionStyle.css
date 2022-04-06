@@ -1,8 +1,8 @@
 .headerIn{
-    color:blue;
+    color:rgb(33, 118, 197);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 500px;
-    margin-top: 20px;
+    margin-left: 400px;
+    margin-top: 70px;
     font-size: 60px;
     margin-bottom: 30px;
     
@@ -11,34 +11,50 @@
     .link1{
     margin-left: 110px;
     
+
     }
     
     .a{
     
-       background-color: black;
-       height: 1000vh;
+       background-color: white;
+       
+       /* background-image: url(https://static.vecteezy.com/ti/vecteur-libre/p1/600537-abstrait-fond-noir-degrade-qui-a-l-39-air-moderne-vectoriel.jpg); */
+       /* background-size: cover; */
+       
+       
+
+       padding-left: 60px;
     }
      
         .mybtnIn{
             margin-top:5ex;
-            background-color:blue;
+            background-color:rgb(33, 118, 197);
             color: white;
     
             display: block;
-        width: 700px;
-        margin-left: 90px;
+        width: 500px;
+        margin-left: 130px;
         } 
+        .mybtnIn:hover{
+
+          color:rgba(13, 114, 47, 0.911);
+        }
     
         .Myform{
-    
+/*     
            margin-left: 200px;
-           margin-right: 200px;;
+          
            /* display:inline-flexbox; */
-           border: 2px white;
+           /* border: 2px white;
            border-style:double;
-           border-radius: 30px;
-           height: 70vh;
-           padding-left: 30px;
+           border-radius: 30px; */
+          
+           
+           /* height: 70vh; */
+           padding-left: 200px;
+           height: 300px;
+           /* width: 1455px; */
+          
         
         }
         .i1{
@@ -55,4 +71,39 @@
           margin-left: 360px;
           height: 28px;
     
+        }
+        .d{
+
+          background: url(im.png),no-repeat;
+          background-size: 200px;
+          background-repeat: no-repeat;
+          margin-bottom: -100px;
+          margin-right: 10px;
+        
+        }
+        .k{ 
+
+
+          background-image:url(https://st3.depositphotos.com/1537427/18226/v/450/depositphotos_182261480-stock-illustration-businessman-icon-or-office-worker.jpg);
+          background-repeat: no-repeat;
+          background-position-x:center;
+          height: 100vh;
+          background-size: 300px;
+
+         
+        }
+        .b2{
+
+          margin-left: 290px;
+
+
+        }
+        
+        .hr{
+
+
+height: 10px;
+background-color: rgb(116, 114, 114);
+margin-left: 70px;
+
         }

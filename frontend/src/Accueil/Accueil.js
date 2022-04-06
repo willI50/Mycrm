@@ -9,15 +9,15 @@ function Accueil(){
 return(
 
 
-<div className="bG">
+<div className=" div1">
 
-<Row className="" >
-  <div className="bG" sm="8">
-    <div className="div1" body>
-      <CardTitle tag="h1" align="center" className="title1">
-      <strong>MyCRM</strong>
+{/* <Row className="" > */}
+ 
+    <div className=" div1 ml-2" >
+      <CardTitle  align="center" >
+      <strong className="title1">MyCRM</strong>
       </CardTitle>
-      <Row className=" R1" >
+      <Row className=" R1 " >
       <Col  sm="6">
       <NavLink to="/login" > 
       <Button className="bT1"
@@ -30,8 +30,8 @@ return(
   </Col>
   <Col  sm="6">
   <NavLink to="/Inscription" >
-  <Button  className="bT1"
-    color="warning"
+  <Button  className="bT2"
+    color="primary"
     outline
   >
     <strong>Register</strong>
@@ -40,40 +40,14 @@ return(
   </Col>
   </Row>
       
-    </div>
+    
   </div>
 
 
   
 
 
-  {/* <Col className="div2" sm="4">
-    <Card body>
-      <CardTitle tag="h5">
-        Special Title Treatment
-      </CardTitle>
-      <CardText>
-        With supporting text below as a natural lead-in to additional content.
-      </CardText>
-      
-    </Card>
-  </Col>
-
-
-
-
-  <Col className="" sm="4">
-    <Card body>
-      <CardTitle tag="h5">
-        Special Title Treatment
-      </CardTitle>
-      <CardText>
-        With supporting text below as a natural lead-in to additional content.
-      </CardText>
-      
-    </Card>
-  </Col> */}
-</Row>
+ 
 </div>
 
 
