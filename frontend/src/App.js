@@ -1,13 +1,11 @@
 import './App.css';
 import Passwordreset from './Passwordreset/Passwordreset';
 import {BrowserRouter , Routes,Route,} from 'react-router-dom';
-import NewTicket from './Dashbord/NewTicket';
+import NewTicket from './Dashbord/NewTickets/NewTicket';
 import Inscription from './Inscription/Inscription';
 import Accueil from './Accueil/Accueil';
 import Login from './Login/Login';
 import Dashbord from './Dashbord/Dasbord';
-import MyCommand from './Dashbord/MyCommand';
-import NewCommand from './Dashbord/NewCommand';
 
 
 
@@ -31,9 +29,7 @@ function App() {
       < Route path="/Inscription" element={<Inscription/>} />
 
       < Route path="/Dashbord" element={<Dashbord/>} />
-      < Route path="/MyCommand" element={<MyCommand/>} />
-      < Route path="/NewCommand" element={<NewCommand/>} />
-
+      
         </Routes> 
     
     

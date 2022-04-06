@@ -4,7 +4,7 @@ import './NewTicket.css'
 import {Button} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUserCircle } from '@fortawesome/free-solid-svg-icons'
-import Header from '../Layout/Header';
+
 import axios    from 'axios'
 
 class NewTicket extends React.Component{
@@ -68,7 +68,7 @@ render(){
 
     return(
         <div>
- <Header/>
+
  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <div className='form'>
         <br/><br/>
