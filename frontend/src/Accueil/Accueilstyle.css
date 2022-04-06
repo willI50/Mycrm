@@ -5,3 +5,47 @@ font-size: 50px;
 color: bisque;
 
 }
+.text1{
+
+    font-size: 20px;
+    color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+            }
+            .text2{
+
+                font-size: 60px;
+                color: blanchedalmond;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                
+                
+                        }
+@media (max-width:820px) {
+    .logo{
+
+       
+        font-size: 30px;
+       
+        
+        }
+        .text1{
+
+font-size: 20px;
+color: blanchedalmond;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+        }
+        .text2{
+
+            font-size: 30px;
+            color: blanchedalmond;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+            
+                    }
+
+
+    
+}

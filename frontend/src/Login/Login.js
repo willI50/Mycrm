@@ -83,16 +83,16 @@ return(
 
 
 <div className='row '> 
-<div className='col-4 orm' >
-<div className='form-group'>
+<div className='col-4 ml-5  ' >
+<div className='form-group '>
 <h1 className='headerlog' > Login Client   </h1>
 
-<form className='' onSubmit={handleSubmit} >
+<form className='orm' onSubmit={handleSubmit} >
 <hr/>
-<div className='form-group'>
+<div className='form-group '>
 
 <FontAwesomeIcon icon={ faEnvelope} className="i1" ></FontAwesomeIcon>
-<input type="email" name='email' onChange={handlechange} onKeyUp={handlechange} placeholder='Emai' className='form-control' value={email} required />
+<input type="email" name='email' id="int" onChange={handlechange} onKeyUp={handlechange} placeholder='Emai' className='form-control orm' value={email} required />
 
 
 </div>
@@ -101,7 +101,7 @@ return(
 
 <label className='form-label' > </label>
 <FontAwesomeIcon icon={ faLock} className="i2" ></FontAwesomeIcon>
-<input type="password" name='password' onChange={handlechange}  onKeyUp={handlechange} value={password} placeholder='password' className='form-control' required />
+<input type="password"  name='password' onChange={handlechange}  onKeyUp={handlechange} value={password} placeholder='password' className='form-control orm' required />
 
 </div>
 

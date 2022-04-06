@@ -3,7 +3,7 @@ color:rgb(33, 118, 197);
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 margin-left: 70px;
 margin-top: 50px;
-font-size: 60px;
+font-size: 40px;
 
 
 }
@@ -18,18 +18,18 @@ margin-left: 110px;
         background-color:rgb(33, 118, 197);
         color: white;
 
-    display: block;
+    /* display: block; */
     width: 400px;
     } 
 
     .orm{
 
-       margin-left: 130px;
+       /* margin-left: 100px; */
        margin-right: -60px;;
        display: block;
-       border-right: 2px rgb(197, 192, 192) groove;
+       
        padding-right: 80px;
-       width: 5px;
+       width: 400px;
        
     
     }
@@ -56,6 +56,58 @@ height: 27px;
           background-repeat: no-repeat;
           margin-left: 90px;
     
+    }
+    @media (max-width:820px) {
+
+      .headerlog{
+
+        font-size: 30px;
+        margin-left: 100px;
+       width: 90px;
+
+      }
+      .orm{
+        
+        margin-left: 0px;
+       margin-right: 2px;;
+       /* display: block; */
+       border-right: 0px white groove;
+       padding-right: 50px;
+       width: 300px;
+       align-items:flex-start;
+       
+
+
+      }
+      .mybtn{
+
+
+        width: 100px;
+
+      }
+      .b{
+display: none;
+       
+      }
+      .i1{
+
+
+        margin-top: -10px;
+  margin-bottom: -35px;
+  margin-left: 260px;
+  height: 27px;
+      }
+      .i2{
+
+
+        margin-top: -10px;
+  margin-bottom: -35px;
+  margin-left: 260px;
+  height: 27px;
+      }
+     
+
+
     }
 
 
