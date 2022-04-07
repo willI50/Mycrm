@@ -5,7 +5,7 @@ import ProductHeroLayout from './ProductHeroLayout';
 import "../Accueilstyle.css"
 
 const backgroundImage =
-'https://mobimg.b-cdn.net/v3/fetch/63/634a5e99d9789edb51ef4fb1bb387f6f.jpeg';
+'https://res.cloudinary.com/doaf5left/image/upload/v1649323439/samples/im_www1yk.jpg';
 
 export default function ProductHero() {
   return (
@@ -25,7 +25,7 @@ export default function ProductHero() {
      
       <br/>
      
-      <Typography variant="h5" color="blanchedalmond"  font-family="Georgia, 'Times New Roman', Times, serif" align="center" sx={{ mt: 2 }}>
+      <Typography variant="h5" color="blanchedalmond"  fontFamily="Georgia, 'Times New Roman', Times, serif" align="center" sx={{ mt: 2 }}>
        <div className="text1">
        Vous etes une  Start-up ? : Venez un grand marché Vous tend les bras  
        </div>

@@ -1,14 +1,16 @@
-import * as React from 'react';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import ListSubheader from '@mui/material/ListSubheader';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import BusinessIcon from '@mui/icons-material/Business';
-import ForumSharpIcon from '@mui/icons-material/ForumSharp';
-import LayersIcon from '@mui/icons-material/Layers';
-import AssignmentIcon from '@mui/icons-material/Assignment';
+import * as React from "react";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import ShoppingCartIcon from "@mui/icons-material/Assignment";
+import BusinessIcon from "@mui/icons-material/Business";
+import ForumSharpIcon from "@mui/icons-material/ForumSharp";
+import LayersIcon from "@mui/icons-material/Man";
+
+import Link from '@mui/material/Link';
+
 
 export const mainListItems = (
   <React.Fragment>
@@ -20,7 +22,7 @@ export const mainListItems = (
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        {/* <ShoppingCartIcon /> */}
+        <ShoppingCartIcon />
       </ListItemIcon>
       <ListItemText primary="Command" />
     </ListItemButton>
@@ -30,20 +32,28 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Entreprise" />
     </ListItemButton>
+    <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              href="/NewTicket"
+            
+            >
     <ListItemButton>
       <ListItemIcon>
         <ForumSharpIcon />
       </ListItemIcon>
       <ListItemText primary="Tickets" />
     </ListItemButton>
+    </Link>
     <ListItemButton>
-      <ListItemIcon>
+      <ListItemIcon width="70px">
         <LayersIcon />
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary=" My Informations " />
     </ListItemButton>
   </React.Fragment>
-)
+);
 
 // export const secondaryListItems = (
 //   <React.Fragment>

@@ -1,5 +1,5 @@
 import React from 'react';
-import  {NavLink, useNavigate } from 'react-router-dom';
+// import  {NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope,faLock,faUser,faCity,faPhone} from '@fortawesome/free-solid-svg-icons'
@@ -93,7 +93,7 @@ return(
     <div className=' ' >
     <div className='form-group'>
     <br/>
-    <form className='' onSubmit={this.handlesubmit} >
+    <form className='Myform' onSubmit={this.handlesubmit} >
     <div className='row a '>
     <div className='col '>
     <br/> <br/> <br/>
@@ -103,21 +103,21 @@ return(
 
     <div className='form-group'>
     
-    <FontAwesomeIcon icon={ faUser} className="i1" ></FontAwesomeIcon>
+    <FontAwesomeIcon icon={ faUser} className="i4" ></FontAwesomeIcon>
     <input type="text" name='Nom' onChange={this.handleChange}  placeholder='Nom Complet' className='form-control'  required />
     <br/>
     </div>
 
     <div className='form-group '>
     
-    <FontAwesomeIcon icon={ faEnvelope} className="i1" ></FontAwesomeIcon>
+    <FontAwesomeIcon icon={ faEnvelope} className="i4" ></FontAwesomeIcon>
     <input type="email" name='email' onChange={this.handleChange}  placeholder='Email' className='form-control'  required />
     <br/>
     </div>
 
     <div className='form-group'>
     
-    <FontAwesomeIcon icon={ faCity} className="i1" ></FontAwesomeIcon>
+    <FontAwesomeIcon icon={ faCity} className="i4" ></FontAwesomeIcon>
     <input type="text" name='Ville' onChange={this.handleChange}  placeholder='Ville' className='form-control'  required />
     
     </div>
@@ -128,7 +128,7 @@ return(
 
     <div className='form-group'>
     
-    <FontAwesomeIcon icon={ faPhone} className="i1" ></FontAwesomeIcon>
+    <FontAwesomeIcon icon={ faPhone} className="i4" ></FontAwesomeIcon>
     <input type="text" name='Telephone' onChange={this.handleChange}  placeholder='Telephone' className='form-control'  required />
     
     </div>
@@ -137,7 +137,7 @@ return(
     <div className='form-group'>
     
     <label className='form-label' > </label>
-    <FontAwesomeIcon icon={ faLock} className="i2" ></FontAwesomeIcon>
+    <FontAwesomeIcon icon={ faLock} className="i3" ></FontAwesomeIcon>
     <input type="password" name='password' id='mdp'  onChange={this.handleChange} placeholder='password' className='form-control' required />
     
     </div>
@@ -145,7 +145,7 @@ return(
     <div className='form-group'>
     
     <label className='form-label' > </label>
-    <FontAwesomeIcon icon={ faLock} className="i2" ></FontAwesomeIcon>
+    <FontAwesomeIcon icon={ faLock} className="i3" ></FontAwesomeIcon>
     <input type="password"  id='vmdp' name='confirmepassword' onChange={this.handleChange} placeholder='Confirme password' className='form-control' required />
     
     </div>
@@ -161,9 +161,7 @@ return(
     </div>
     
     
-    
-    <div className='col k'>
-    </div>
+   
     </div>
     </form>
     

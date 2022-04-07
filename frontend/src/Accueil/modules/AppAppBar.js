@@ -34,7 +34,7 @@ function AppAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-up/"
+              href="/Inscription"
               sx={{ ...rightLink,  }}
             >
               {'Sign Up'}

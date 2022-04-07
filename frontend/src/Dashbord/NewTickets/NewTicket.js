@@ -34,14 +34,14 @@ let value=e.target.value
 info : issue
 
     })
-console.log(this.state.info)
+
 
 
 }
 
 handleSubmit(e){
 e.preventDefault()
-console.log(this.state.info)
+
 
 this.setState({
 
@@ -51,9 +51,9 @@ this.setState({
     
         })
 
-        axios.post('http://localhost:4002/api/NewTicket', this.state.info).then( (res)=>  {  
+        axios.post('http://137.184.12.172:4001//api/NewTicket', this.state.info).then( (res)=>  {  
             const infos=res.data
-            console.log(infos)
+            
            
     
         })

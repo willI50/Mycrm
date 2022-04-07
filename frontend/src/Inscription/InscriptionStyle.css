@@ -18,8 +18,6 @@
     
        background-color: white;
        
-       /* background-image: url(https://static.vecteezy.com/ti/vecteur-libre/p1/600537-abstrait-fond-noir-degrade-qui-a-l-39-air-moderne-vectoriel.jpg); */
-       /* background-size: cover; */
        
        
 
@@ -51,13 +49,13 @@
           
            
            /* height: 70vh; */
-           padding-left: 200px;
+           padding-left: 50px;
            height: 300px;
            /* width: 1455px; */
           
         
         }
-        .i1{
+        .i4{
     
     
           margin-top: -40px;
@@ -65,33 +63,15 @@
     margin-left: 360px;
     height: 27px;
         }
-        .i2{
+        .i3{
           /* margin-top: -30px; */
           margin-bottom: -38px;
           margin-left: 360px;
           height: 28px;
     
         }
-        .d{
-
-          background: url(im.png),no-repeat;
-          background-size: 200px;
-          background-repeat: no-repeat;
-          margin-bottom: -100px;
-          margin-right: 10px;
         
-        }
-        .k{ 
-
-
-          background-image:url(https://st3.depositphotos.com/1537427/18226/v/450/depositphotos_182261480-stock-illustration-businessman-icon-or-office-worker.jpg);
-          background-repeat: no-repeat;
-          background-position-x:center;
-          height: 100vh;
-          background-size: 300px;
-
-         
-        }
+        
         .b2{
 
           margin-left: 290px;
@@ -107,3 +87,79 @@ background-color: rgb(116, 114, 114);
 margin-left: 70px;
 
         }
+        @media (max-width:993px) {
+
+
+          .headerIn{
+            
+            margin-left:200px;
+            margin-top: 40px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            
+            
+            }
+            .form-control{
+
+width: 240px;
+
+            }
+           
+
+            .i4{
+    
+    
+              /* margin-top: -40px; */
+        margin-bottom: -35px;
+        margin-left: 208px;
+        height: 27px;
+            }
+            .i3{
+              /* margin-top: -30px; */
+              margin-bottom: -38px;
+              margin-left: 208px;
+              height: 28px;
+        
+            }
+            .hr{
+
+
+              height: 10px;
+              background-color: rgb(116, 114, 114);
+              margin-left: 30px;
+              
+                      }
+
+                      .Myform{
+                        /*     
+                                   margin-left: 200px;
+                                  
+                                   
+                                   /* border: 2px white;
+                                   border-style:double;
+                                   border-radius: 30px; */
+                                  
+                                   
+                                   /* height: 70vh; */
+                                   padding-left: 50px;
+                                   height: 300px;
+                                   width: 55px;
+                                   display:inline-flexbox;
+                                   flex-direction: column;
+                                  
+                                
+                                }
+
+
+                                .mybtnIn{
+                                  margin-top:5ex;
+                                  background-color:rgb(33, 118, 197);
+                                  color: white;
+                          
+                                  display: block;
+                              width: 300px;
+                              margin-left: 8px;
+                              } 
+        }
+
+        

@@ -31,6 +31,8 @@ class TicketsTable extends React.Component {
   render() {
     return (
       <div>
+
+        {this.state.myticket.length}
         <Table  style={{ color: "blue" }}>
           <thead>
             <tr>
