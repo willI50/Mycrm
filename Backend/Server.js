@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 const User = require("./Models/Users");
 const Ticket = require("./Models/Tickets");
-const port = process.env.port || 4002;
+const port = process.env.port || 4001;
 
 var bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
@@ -24,6 +24,7 @@ mongoose
   .catch((e) => console.log("Connexion à MongoDB échouée : " + e));
 app.use(bodyParser.json({ parameterLimit: 10000, limit: "50mb" }));
 app.use(bodyParser.json());
+
 // DEFINITION DES CORS
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -38,36 +39,37 @@ app.use((req, res, next) => {
   next();
 });
 
-//recevoir les données envoyés depuis le frontend
+//recevoir les données envoyés depuis le frontend et gestion de l'authentification
 app.post("/api/Login", (req, res, next) => {
   if (req.body !== undefined) {
     console.log(req.body);
-    Users.findOne({
-      email: req.body.email,
-      password: req.body.password  },
-      function(err, user) {
+    Users.findOne(
+      {
+        email: req.body.email,
+        password: req.body.password,
+      },
+      function (err, user) {
         if (user) {
-          const token = jwt.sign(req.body.email, process.env.TOKEN_SECRET);
-          const my = [user.password, token];
-          res.status(201).json(my);
-
-          console.log(user);
-
           //  generer un token
           //  1er parametre est le corps de la requet
           //  2e parametre la clé secret
           //  3e parametre le temps de validité du token
+          const token = jwt.sign(req.body.email, process.env.TOKEN_SECRET);
+
+          //resultat renvoyer apres le login
+          const my = [user.password, token];
+          res.status(201).json(my);
+
+          console.log(user);
         }
-      },
+      }
     );
   }
 });
 
+// gestion de l'inscription client
 app.post("/api/inscription", (req, res, next) => {
   if (req.body !== undefined) {
-    // const token = jwt.sign({Ident:req.body.email}, process.env.TOKEN_SECRET,)
-    // if(req.body.email==User.email){
-
     const user = new User(req.body);
     user
       .save()
@@ -99,6 +101,8 @@ app.post("/api/NewTicket", (req, res, next) => {
   }
   next();
 });
+
+//renvoie des elements du ticket vers le frontend
 
 app.get("/api/NewTicke", (req, res, next) => {
   Tickets.find({}, function (err, resTicket) {
