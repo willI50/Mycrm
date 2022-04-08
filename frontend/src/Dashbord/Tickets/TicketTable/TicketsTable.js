@@ -2,6 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import "./TicketsTable.css";
 import axios from "axios";
+import { Button } from "react-bootstrap";
 
 class TicketsTable extends React.Component {
   constructor(props) {
@@ -51,6 +52,19 @@ class TicketsTable extends React.Component {
                   <td>{ ticket.subject}</td>
                   <td>appending status</td>
                   <td>{ticket.date}</td>
+                  <td>
+                  <th>
+                     <Button className="btn">
+                    Update
+                    </Button>
+                    </th>
+                    <th>
+                     <Button className="btn">
+                    Delete
+                    </Button>
+                    </th>
+                    
+                    </td>
                  </tr>
               ) }
             

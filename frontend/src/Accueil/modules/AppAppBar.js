@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import {  Link  } from 'react-router-dom';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 import "../Accueilstyle.css"
+import { Button } from 'reactstrap';
 
 const rightLink = {
   fontSize: 16,
@@ -26,18 +27,28 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/Login"
+              to="/Login"
               sx={rightLink}
             >
-              {'Sign In'}
+               <Button className='btn-warning' >
+
+              Sign In
+              </Button>
             </Link>
+            </Box>
+            
+            <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Link
+              color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-up/"
-              sx={{ ...rightLink,  }}
+              to="/Login"
+              sx={rightLink}
             >
-              {'Sign Up'}
+               <Button  className='btn-warning'>
+
+              Sign up
+              </Button>
             </Link>
           </Box>
         </Toolbar>

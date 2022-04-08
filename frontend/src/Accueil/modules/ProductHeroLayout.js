@@ -11,7 +11,7 @@ const ProductHeroLayoutRoot = styled('section')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   [theme.breakpoints.up('sm')]: {
-    height: '80vh',
+    height: '100vh',
     minHeight: 500,
     maxHeight: 1300,
   },
@@ -54,6 +54,7 @@ function ProductHeroLayout(props) {
             backgroundColor: 'common.black',
             opacity: 0.5,
             zIndex: -1,
+            height:630
           }}
         />
         <Background sx={sxBackground} />

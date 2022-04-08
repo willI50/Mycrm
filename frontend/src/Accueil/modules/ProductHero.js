@@ -5,7 +5,7 @@ import ProductHeroLayout from './ProductHeroLayout';
 import "../Accueilstyle.css"
 
 const backgroundImage =
-'https://mobimg.b-cdn.net/v3/fetch/63/634a5e99d9789edb51ef4fb1bb387f6f.jpeg';
+'https://ideas4development.org/wp-content/uploads/2017/12/Startup-1.jpg';
 
 export default function ProductHero() {
   return (
@@ -15,6 +15,7 @@ export default function ProductHero() {
         backgroundColor: '#7fc7d9', 
         // Average color of the background image.
         backgroundPosition: 'center',
+        
       }}
     >
      
