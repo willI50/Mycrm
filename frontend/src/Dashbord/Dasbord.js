@@ -20,9 +20,10 @@ import Link from '@mui/material/Link';
 // import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems } from './listItems';
 import TicketsTable from "./Tickets/TicketTable/TicketsTable"
-// import Chart from './Chart';
+import Ticketlengh from "./Ticketlengh"
+import Commandlengh from "./Commandlenght"
 
-// import Orders from './Orders';
+
 
 function Copyright(props) {
   return (
@@ -169,7 +170,7 @@ function DashboardContent() {
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
               
-              <Grid item xs={12} md={8} lg={9}>
+              <Grid item xs={12} md={8} lg={6}>
                 <Paper
                   sx={{
                     p: 2,
@@ -178,10 +179,12 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
+                 <Commandlengh />
+
                 </Paper>
               </Grid>
-              {/* Recent Deposits */}
-              <Grid item xs={12} md={4} lg={3}>
+              
+              <Grid item xs={12} md={4} lg={6}>
                 <Paper
                   sx={{
                     p: 2,
@@ -190,7 +193,8 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  {/* <Deposits /> */}
+                    <Ticketlengh/>
+                
                 </Paper>
               </Grid>
               {/* Recent Orders */}

@@ -26,7 +26,7 @@ export default function ProductHero() {
      
       <br/>
      
-      <Typography variant="h5" color="blanchedalmond"  font-family="Georgia, 'Times New Roman', Times, serif" align="center" sx={{ mt: 2 }}>
+      <Typography variant="h5" color="blanchedalmond"  fontFamily="Georgia, 'Times New Roman', Times, serif" align="center" sx={{ mt: 2 }}>
        <div className="text1">
        Vous etes une  Start-up ? : Venez un grand marché Vous tend les bras  
        </div>

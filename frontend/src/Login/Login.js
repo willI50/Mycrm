@@ -58,7 +58,7 @@ const handlechange=(e)=>{
         console.log(infos);
 //stocker les elements dans le localStorage
        
-if(info==undefined){   
+if(info===undefined){   
 
     console.log("rien")
 }

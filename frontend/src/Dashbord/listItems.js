@@ -20,7 +20,7 @@ export const mainListItems = (
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        {/* <ShoppingCartIcon /> */}
+        <ShoppingCartIcon />
       </ListItemIcon>
       <ListItemText primary="Command" />
     </ListItemButton>
@@ -30,20 +30,28 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Entreprise" />
     </ListItemButton>
+    <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              href="/NewTicket"
+            
+            >
     <ListItemButton>
       <ListItemIcon>
         {/* <ForumSharpIcon /> */}
       </ListItemIcon>
       <ListItemText primary="Tickets" />
     </ListItemButton>
+    </Link>
     <ListItemButton>
       <ListItemIcon>
         {/* <LayersIcon /> */}
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary=" My Informations " />
     </ListItemButton>
   </React.Fragment>
-)
+);
 
 // export const secondaryListItems = (
 //   <React.Fragment>
