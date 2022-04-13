@@ -31,9 +31,11 @@ export default function ProductHero() {
        Vous etes une  Start-up ? : Venez un grand marché Vous tend les bras  
        </div>
        <br/>
+       <Typography >
        <Button className="btn-warning">
          Nous vous Attendons
        </Button>
+       </Typography>
 
        <br/><br/>
        <div className="text1">

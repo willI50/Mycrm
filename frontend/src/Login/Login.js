@@ -58,9 +58,18 @@ const handlechange=(e)=>{
         console.log(infos);
 //stocker les elements dans le localStorage
        
-if(info===undefined){   
+if(infos==="Password doesn't match!"){  
+     // crée un nouvel élément div
+  var newDiv = document.createElement("div");
+  // et lui donne un peu de contenu
+  var newContent = document.createTextNode(infos);
+  // ajoute le nœud texte au nouveau div créé
+  newDiv.appendChild(newContent); 
+  // ajoute le nouvel élément créé et son contenu dans le DOM
+  var currentDiv = document.getElementById('div1');
+  document.body.insertBefore(newDiv, currentDiv);
 
-    console.log("rien")
+    
 }
 else{ 
     localStorage.setItem("token",JSON.stringify(infos));
@@ -78,18 +87,18 @@ else{
 
 return(
 
-<div className=''>
+<div id='div1' className=''>
     
 
 
-<div className='row '> 
+<div  className='row '> 
 <div className='col-4 ml-5  ' >
 <div className='form-group '>
 <h1 className='headerlog' > Login Client   </h1>
 
 <form className='orm' onSubmit={handleSubmit} >
 <hr/>
-<div className='form-group '>
+<div  className='form-group '>
 
 <FontAwesomeIcon icon={ faEnvelope} className="i1" ></FontAwesomeIcon>
 <input type="email" name='email' id="int" onChange={handlechange} onKeyUp={handlechange} placeholder='Emai' className='form-control orm' value={email} required />

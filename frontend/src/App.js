@@ -6,6 +6,7 @@ import Inscription from './Inscription/Inscription';
 import Accueil from './Accueil/Accueil';
 import Login from './Login/Login';
 import Dashbord from './Dashbord/Dasbord';
+import Entreprise from './Dashbord/Entreprise';
 
 
 
@@ -29,6 +30,7 @@ function App() {
       < Route path="/Inscription" element={<Inscription/>} />
 
       < Route path="/Dashbord" element={<Dashbord/>} />
+      <Route path="/Entreprise" element={<Entreprise/>} />
       
         </Routes> 
     
