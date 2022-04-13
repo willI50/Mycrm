@@ -32,8 +32,6 @@ class TicketsTable extends React.Component {
   render() {
     return (
       <div>
-
-        {this.state.myticket.length}
         <Table  style={{ color: "blue" }}>
           <thead>
             <tr>
@@ -42,6 +40,7 @@ class TicketsTable extends React.Component {
               <th>Status</th>
               <th>Opened Date</th>
               <th>Update</th>
+              <th>Delete</th>
             </tr>
           </thead>
 
@@ -55,18 +54,29 @@ class TicketsTable extends React.Component {
                   <td>appending status</td>
                   <td>{ticket.date}</td>
                   <td>
-                  <th>
-                     <Button className="btn">
-                    Update
+                  
+                  
+                     <Button className="btn-warning">
+                     Update
                     </Button>
-                    </th>
-                    <th>
-                     <Button className="btn">
-                    Delete
-                    </Button>
-                    </th>
                     
+                    {/* </th> */}
+                    {/* <th> */}
+                  
+                
                     </td>
+                    <td>
+                  
+                  
+                 
+               
+                  <Button className="btn-warning">
+                 Delete
+                 </Button>
+                
+                 
+                 
+                 </td>
                  </tr>
               ) }
             

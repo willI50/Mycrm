@@ -51,7 +51,7 @@ this.setState({
     
         })
 
-        axios.post('http://137.184.12.172:4001//api/NewTicket', this.state.info).then( (res)=>  {  
+        axios.post('http://localhost:4002/api/NewTicket', this.state.info).then( (res)=>  {  
             const infos=res.data
             
            
@@ -84,7 +84,7 @@ render(){
 <input type="text" name='subject'  value={this.state.subject}     onChange={this.handleChange.bind(this)}   className='form-control'  required />
 
 
-<FontAwesomeIcon icon={ faUserCircle} className="icone" ></FontAwesomeIcon>
+
 
 <br/>
 

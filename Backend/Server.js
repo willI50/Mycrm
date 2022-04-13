@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 const User = require("./Models/Users");
 const Ticket = require("./Models/Tickets");
-const port = process.env.port || 4001;
+const port = process.env.port || 4002;
 
 var bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
@@ -42,15 +42,30 @@ app.use((req, res, next) => {
 //recevoir les données envoyés depuis le frontend et gestion de l'authentification
 app.post("/api/Login", (req, res, next) => {
   if (req.body !== undefined) {
-    console.log(req.body);
+    
     Users.findOne(
       {
         email: req.body.email,
-        password: req.body.password,
+        
       },
-      function (err, user) {
+      async function (err, user) {
         if (user) {
-          //  generer un token
+         
+
+            bcrypt.compare(req.body.password , user.password ,  function (error, isMatch){
+
+              if (error) {
+                throw error
+              }
+              else if (!isMatch) {
+                res.json("Password doesn't match!");
+                console.log("Password doesn't match!")
+              }
+                   
+           else {
+             console.log(isMatch);
+
+           //  generer un token
           //  1er parametre est le corps de la requet
           //  2e parametre la clé secret
           //  3e parametre le temps de validité du token
@@ -61,6 +76,13 @@ app.post("/api/Login", (req, res, next) => {
           res.status(201).json(my);
 
           console.log(user);
+
+           }
+           
+
+
+          }  )
+          
         }
       }
     );

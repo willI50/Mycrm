@@ -2,7 +2,9 @@ import * as React from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import ListSubheader from '@mui/material/ListSubheader';
+
+import {Link} from "react-router-dom"
+// import ListSubheader from '@mui/material/ListSubheader';
 // import DashboardIcon from '@mui/icons-material/Dashboard';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 // import BusinessIcon from '@mui/icons-material/Business';
@@ -20,21 +22,29 @@ export const mainListItems = (
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        {/* <ShoppingCartIcon /> */}
       </ListItemIcon>
       <ListItemText primary="Command" />
     </ListItemButton>
+    <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              to="/Entreprise"
+            
+            >
     <ListItemButton>
       <ListItemIcon>
         {/* <BusinessIcon /> */}
       </ListItemIcon>
       <ListItemText primary="Entreprise" />
     </ListItemButton>
+    </Link>
     <Link
               color="inherit"
               variant="h6"
               underline="none"
-              href="/NewTicket"
+              to="/NewTicket"
             
             >
     <ListItemButton>

@@ -82,7 +82,7 @@ return(
 
 <div className=''>
 <div className='row '>
-<div className='col-6'>
+<div className='col-12'>
    
     <h1 className='headerIn' > Register Client  </h1>
     </div>
@@ -156,7 +156,7 @@ return(
     
     </div>
     <br/> <br/>
-    <hr className='hr' />
+  
     <button className='mybtnIn btn' type='submit'> Register </button>
     </div>
     

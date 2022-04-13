@@ -42,7 +42,7 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              to="/Login"
+              to="/Inscription"
               sx={rightLink}
             >
                <Button  className='btn-warning'>
